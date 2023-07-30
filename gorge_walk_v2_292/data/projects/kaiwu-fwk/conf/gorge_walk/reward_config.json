@@ -1,0 +1,11 @@
+{
+  "reward_end_dist": "2.0",
+  "reward_buff_dist": "0.0",
+  "reward_treasure_dists": "0.0",
+  "reward_treasure": "0.0",
+  "reward_step": "-0",
+  "reward_bump": "-1.0",
+  "reward_win": "1.0",
+  "reward_memory": "-5.0",
+  "reward_flicker": "0"
+}

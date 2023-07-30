@@ -1,0 +1,15 @@
+{
+    "nature_client": {
+        "treasure_num": 10,
+        "random_start": true,
+        "random_end": false,
+        "random_treasure": true,
+        "max_frame": 3000
+    },
+    "gorge_walk": {
+        "buff_pos_id": 0,
+        "start_pos_id": 1,
+        "end_pos_id": 2,
+        "treasure_pos_id": []
+    }
+}

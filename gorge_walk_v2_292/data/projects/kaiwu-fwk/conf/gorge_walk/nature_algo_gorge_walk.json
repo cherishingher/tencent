@@ -1,0 +1,35 @@
+{
+  "pg": {
+    "actor_model": "app.gorge_walk.algorithm.torch_pg_model.PGModel",
+    "learner_model": "app.gorge_walk.algorithm.torch_pg_model.PGModel",
+    "trainer": "framework.server.python.learner.gorge_walk_pg_trainer.GorgeWalkPGTrainer",
+    "predictor": "framework.server.python.actor.pg_predictor.PGPredictor",
+    "expr_processor": "app.gorge_walk.sample_processor.gorge_walk_sample_processor.GorgeWalkSampleProcessor",
+    "default_config": "framework.common.algorithms.ppo.PPODefaultConfig"
+  },
+  "dqn": {
+    "actor_model": "app.gorge_walk.algorithm.torch_dqn_model.DQNModel",
+    "learner_model": "app.gorge_walk.algorithm.torch_dqn_model.DQNModel",
+    "trainer": "framework.server.python.learner.gorge_walk_dqn_trainer.GorgeWalkDQNTrainer",
+    "predictor": "framework.server.python.actor.dqn_predictor.DQNPredictor",
+    "expr_processor": "app.gorge_walk.sample_processor.gorge_walk_sample_processor.GorgeWalkSampleProcessor",
+    "default_config": "framework.common.algorithms.ppo.PPODefaultConfig"
+  },
+  "ppo": {
+    "actor_model": "app.gorge_walk.algorithm.torch_ppo_model.PPOModel",
+    "learner_model": "app.gorge_walk.algorithm.torch_ppo_model.PPOModel",
+    "trainer": "framework.server.python.learner.gorge_walk_ppo_trainer.GorgeWalkPPOTrainer",
+    "predictor": "framework.server.python.actor.ppo_predictor.PPOPredictor",
+    "expr_processor": "app.gorge_walk.sample_processor.gorge_walk_sample_processor.GorgeWalkSampleProcessorPPO",
+    "default_config": "framework.common.algorithms.ppo.PPODefaultConfig"
+  },
+  "diy": {
+    "actor_model": "app.gorge_walk.algorithm.torch_diy_model.DIYModel",
+    "learner_model": "app.gorge_walk.algorithm.torch_diy_model.DIYModel",
+    "trainer": "framework.server.python.learner.gorge_walk_diy_trainer.GorgeWalkDIYTrainer",
+    "predictor": "framework.server.python.actor.diy_predictor.DIYPredictor",
+    "expr_processor": "app.gorge_walk.sample_processor.gorge_walk_sample_processor.GorgeWalkSampleProcessorDIY",
+    "default_config": "framework.common.algorithms.ppo.PPODefaultConfig"
+  }
+}
+

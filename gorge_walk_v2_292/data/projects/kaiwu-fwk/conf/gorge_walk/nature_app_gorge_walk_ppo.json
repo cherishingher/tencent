@@ -1,0 +1,15 @@
+{
+  "gorge_walk_v2": {
+    "run_handler": "app.gorge_walk.environment.gorge_walk_run_handler.NatureRunHandler",
+    "policies": {
+      "train_one": {
+        "policy_builder": "framework.server.python.aisrv.async_policy.AsyncBuilder",
+        "algo": "ppo",
+        "state": "app.gorge_walk.state_action_reward.gorge_walk_state.GorgeWalkState",
+        "actor_network": "app.gorge_walk.algorithm.torch_network.ActorCriticNet",
+        "learner_network": "app.gorge_walk.algorithm.torch_network.ActorCriticNet",
+        "action": "app.gorge_walk.state_action_reward.gorge_walk_action.GorgeWalkAction"
+      }
+    }
+  }
+}
